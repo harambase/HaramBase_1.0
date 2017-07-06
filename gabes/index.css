@@ -1,0 +1,273 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media all{
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Consolas, monaco, monospace;
+	line-height: 1.4em;
+	color: #333;
+	background-color: #204a87;
+	overflow-x:hidden;
+	}
+a{
+	text-decoration: none;
+	color: #c7040e;
+	}
+a:hover{
+	text-decoration: underline;
+	}
+	
+img{
+	border: 0;
+	}
+#header {
+	background-color: #eeeeec;
+	margin-top:20px;
+}
+.logo {
+	height: 140px;
+	margin: 0 auto;
+	background-color:transparent;
+}
+.logo img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	position: center;
+}
+
+#outerWrapper{
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	background-color: #d3d7cf;
+	width: auto;
+	}
+#outerWrapper #innerWrapper{
+	margin: 0 auto;
+	padding: 0;
+	background-color: #d3d7cf;
+	text-align: center;
+	}
+#outerWrapper #innerWrapper h1{
+	margin: 0 auto;
+	text-align: center;
+	color: #373737;
+	font-weight: normal;
+	font-size:1.6em;
+	font-family: Georgia,"Tahoma;", Times, serif;
+	font-style:italic;
+	}
+#outerWrapper #innerWrapper #content{
+	margin: 20px 0 0 0;
+	text-align: center;
+	}
+/* --------------------------- FORM --------------------------- */
+#outerWrapper #innerWrapper #content span.secondary{
+	font-size: 0.8em;
+	color: #666666;
+}
+#outerWrapper #innerWrapper #content #input{
+	margin: 0 auto;
+	margin-top: 12px;
+	margin-bottom: 6px;
+	}
+#outerWrapper #innerWrapper #content #input #usernamefield,
+#outerWrapper #innerWrapper #content #input #passwordfield{
+	width: 100%;
+	max-width: 300px;
+	padding: 4px 0 4px 0;
+	margin: 0 auto;
+	margin-top: 3px;
+	margin-bottom: 6px;
+}
+
+#outerWrapper #innerWrapper #content #text{
+	font-size: 0.80em;
+	margin: 0 auto;
+	}
+#outerWrapper #innerWrapper #content #btnLogin #btnReset{
+	margin: 0 auto;
+	margin-top: 15px;
+	}	
+
+.errors {
+	border: 1px dotted #CC0000; 
+	color: #CC0000;
+	background-color: #F78181;
+	max-width: 300px;
+	margin: 10px auto;
+}
+	
+.btn {
+	padding: 6px 50px 6px 50px;
+	font-size:.8em;
+	-webkit-appearance:button;
+	overflow: hidden;
+	text-decoration:none;
+	color: #ffffff;
+	font-family:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+	background: #3465a4;
+	text-shadow: 0px 1px 3px #333333;
+	font-weight: normal;
+	text-transform:uppercase;
+  	background: -webkit-linear-gradient(top, #3465a4, #333333);
+	}
+
+.btn:focus{
+    background: -webkit-linear-gradient(top, #3465a4, #333333);
+	outline: none;
+}
+.btn:hover{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333333), to(#729fcf));
+  background: -webkit-linear-gradient(top, #333333, #729fcf);
+ }
+
+.btn:active{
+	background: #92020c;
+	outline: none;
+	}
+
+/* --------------------------- FOOTER --------------------------- */
+#footer {
+	margin: 0 auto;
+	}
+#footer #copyright p{
+	text-align: center;
+	color:#969696;	
+	font-size: .75em;
+	line-height:1.4em;
+	float:bottom;
+	
+	}
+#footer #copyright a {
+	color: #efefef;
+	text-decoration: none;
+	}
+#footer #copyright a:hover {
+	text-decoration: underline;
+	}
+
+#outerWrapper #innerWrapper #content fieldset,
+#outerWrapper #innerWrapper #content fieldset legend{
+	border: none;
+	border-top: solid 1px #fff;
+	position: relative;
+	white-space: normal;
+	max-width: 450px;
+	text-align: center;
+	padding: 0;
+	margin: 0 auto;
+	}
+#outerWrapper #innerWrapper #content fieldset legend{
+	position: relative;
+	max-width: 450px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #999;
+	}
+}
+
+/* --------------------------- ELEMENTS SEEN IN A STANDARD WEB BROWSER --------------------------- */
+@media screen {
+
+#outerWrapper{
+	width: 90%;
+	max-width: 520px;
+	padding: 0px 0 0px 0;
+	position: relative;
+	top: 20px;
+	-webkit-box-shadow: 7px 7px 23px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    7px 7px 23px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         7px 7px 23px 0px rgba(50, 50, 50, 0.75);
+	}
+#outerWrapper #innerWrapper{
+	margin: 0 auto;
+	padding: 35px;
+	max-width: 480px;
+	background-color: white;
+	text-align: center;
+	}
+#outerWrapper #innerWrapper h1{
+	max-width: 420px;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+	border-bottom: solid 1px #ededed;
+
+	}
+#outerWrapper #innerWrapper #content #input #usernamefield,
+#outerWrapper #innerWrapper #content #input #passwordfield{
+	text-align: left;
+	font-size: 0.95em;
+	font-weight:bold;
+	color:#373737;
+	}
+
+#outerWrapper #innerWrapper #content #input #username,
+#outerWrapper #innerWrapper #content #input #password,
+#outerWrapper #innerWrapper #content #input .otp{
+
+	border: solid 4px #e9b96e;
+	font-size: 1.025em;
+	width:50%;
+	-moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-webkit-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-o-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-ms-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+#outerWrapper #innerWrapper #content #input #username:active,
+#outerWrapper #innerWrapper #content #input #password:active,
+#outerWrapper #innerWrapper #content #input .otp:active,
+#outerWrapper #innerWrapper #content #input #username:focus,
+#outerWrapper #innerWrapper #content #input #password:focus,
+#outerWrapper #innerWrapper #content #input .otp:focus {
+	border-color: #969696;
+	/* NEW */
+	-moz-box-shadow: #aea688 0px 0px 5px;
+	-webkit-box-shadow: #aea688 0px 0px 5px;
+	box-shadow: #aea688 0px 0px 5px;
+	-moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-webkit-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-o-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	-ms-transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	transition: border-color  0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	outline: none;
+	
+	}
+#outerWrapper #innerWrapper #content #input #username:active,
+#outerWrapper #innerWrapper #content #input #password:active,
+#outerWrapper #innerWrapper #content #input .otp:active,
+#outerWrapper #innerWrapper #content #input #username:focus,
+#outerWrapper #innerWrapper #content #input #password:focus,
+#outerWrapper #innerWrapper #content #input .otp:focus {
+	width:70%;
+	
+	}
+#outerWrapper #innerWrapper #content #text{
+	margin-top: 30px;
+	max-width: 450px;
+	text-align: center;
+	font-size: 0.75em;
+	}
+#outerWrapper #innerWrapper #content #text ul li,
+#outerWrapper #innerWrapper #content #text ol li{
+	margin-bottom: 20px;
+	}
+#outerWrapper #innerWrapper #content #text ol#swInstructions{
+	margin-top: 6px;
+	margin-bottom: 15px;
+	}
+#outerWrapper #innerWrapper #content #text ol#swInstructions li{
+	margin: auto;
+	font-size: 0.85em;
+	}
+#footer {
+	max-width: 530px;
+	position: relative;
+	top: 35px;
+	}
+}
